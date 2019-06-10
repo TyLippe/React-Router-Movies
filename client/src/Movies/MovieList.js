@@ -41,7 +41,7 @@ function MovieDetails({ movie }) {
       title={title}
       director={director}
       metascore={metascore}
-      stars={stars} />
+      stars={stars} /> 
     </Link>
   );
 }

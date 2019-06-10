@@ -16,12 +16,16 @@ const MovieCard = props => {
           {props.stars.map(star => (
             <div key={star} className="movie-star">
               {star}
-          </div>
-          ))}
-      <div className="save-button">Save</div> 
-    </div>        
+            </div>
+            ))}  
+            <div 
+            className="save-button"
+            onClick={() => props.addToSavedList()}>
+              Save
+            </div>        
+    </div>   
     </>
-  )
+  );
 }
 
 export default MovieCard;
